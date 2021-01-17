@@ -13,3 +13,7 @@ add_executable(check_position src/main.cpp)
 
 target_include_directories(check_position PRIVATE include)
 target_link_libraries(check_position Boost::program_options)
+
+add_executable(test_pieces test/test.cpp)
+target_include_directories(test_pieces PRIVATE include)
+target_link_libraries(test_pieces GTest::GTest)
